@@ -1,0 +1,296 @@
+@charset "utf-8";
+/* CSS Document */
+* {
+	
+}
+
+body {
+
+}
+
+#BigContainer {
+	height:660px;
+	width:1260px;
+    float:left;
+    margin-left:60px;
+}
+
+#ChatFriendsContainer {
+	width:400px;
+	height:660px;
+	float:left;
+	border-left:1px solid black;
+	border-top:1px solid black;
+	border-bottom:1px solid black;
+}
+
+#LeftNameDiv {
+	width:398px;
+	height:80px;
+	font-size:27px;
+	font-weight:bold;
+}
+
+#LeftNameDiv #Text {
+	float:left;
+	margin: 10px 0px 0px 10px;
+}
+
+#LeftNameDiv #Image {
+	float:left;
+	border-radius:50%;
+	background-color:#E4E6EB;
+	width:40px;
+	height:40px;
+	text-align:center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-left:200px;
+	margin-top:5px;
+}
+
+#LeftNameDiv #Image:hover {
+	cursor:pointer;
+	background-color:#D8DADF;
+}
+
+
+#LeftNameDiv #Image img {
+	width:30px;
+	height:30px;
+	border-radius:50%;
+}
+
+
+#ChatFriendsContainer .OneFriend {
+	width:398px;
+	height:76px;
+	border-radius:3%;
+	position:relative;
+}
+
+#ChatFriendsContainer .OneFriend:hover {
+	cursor:pointer;
+	background-color: #F2F2F2;
+	
+}
+
+#ChatFriendsContainer .OneFriend img {
+	width:56px;
+	height:56px;
+	border-radius:50%;
+	float:left;
+	border:1px #EAEAEA;
+	margin:10px 0px 10px 10px;
+}
+
+#ChatFriendsContainer .OneFriend .TextDiv {
+	width:200px;
+	height:61px;
+	float:left;
+	margin:15px 0px 0px 10px;
+}
+
+#ChatFriendsContainer .OneFriend .TextDiv .Name {
+	font-weight: 600;
+	font-size:17px;
+	height:22px;
+	width:200px;
+	overflow:hidden;
+}
+
+#ChatFriendsContainer .OneFriend .TextDiv .MessageText {
+	overflow:hidden;
+	width:200px;
+	height:25px;
+	color:#6E7074;
+}
+
+
+#ChatContainer {
+	width:800px;
+	height:660px;
+	background-color:white;
+	border:1px solid black;
+	float:left;
+}
+
+#InnerChatContainer {
+	margin-top:0px;
+	width:800px;
+	height:500px;
+	border:none;
+	overflow:scroll;
+}
+
+#InputBoxContainer {
+	width:800px;
+	height:40px;
+}
+
+.MySpeech {
+
+	
+	margin:0px 20px 4px 50px;
+	
+	text-align:right;
+
+	position:relative;
+	
+}
+
+.MySpeech .Text {
+	background-color:#0084FF;
+	padding:8px 8px 8px 8px;
+	border-radius:5px;
+	margin:0px 0px 5px 0px;
+	color:white;
+	line-height:25px;
+	display:inline-block;
+	text-align:left;
+	max-width: 440px;
+}
+
+.HisSpeech {
+
+	margin:0px 20px 4px 50px;
+	
+	position:relative;
+	
+}
+
+.HisSpeech .Text {
+	background-color:#E4E6EB;
+	padding:8px 8px 8px 8px;
+	border-radius:5px;
+	margin:0px 0px 5px 0px;
+	line-height:25px;
+	display:inline-block;
+	max-width: 440px;
+}
+
+#ChatInputBox {
+	border-radius:5%;
+
+	height:30px;
+	width:500px;
+	margin-left:50px;
+}
+
+
+
+.ChatFriendPhoto {
+	position:absolute;
+	bottom:5px;
+	left:-38px;
+	width:30px;
+	height:30px;
+	border-radius: 50%;
+}
+
+#FriendNameDiv {
+	width:800px;
+	height:70px;
+	border-bottom:3px solid #F0F0F0;
+	font-size:21px;
+	font-weight:bold;
+	line-height:60px;
+}
+
+#FriendNameDiv img {
+
+	width:45px;
+	height:45px;
+	margin:10px 10px 0px 10px;
+	float:left;
+	border-radius:50%;
+	
+}
+
+#NewMessageSearchContainer {
+    width:800px;
+	height:660px;
+	background-color:white;
+	border:1px solid black;
+	float:left;
+    display:none;
+}
+
+#NewMessageSearchContainer #TextBoxContainer {
+	width:800px;
+	height:50px;
+	border-bottom:1px solid black;
+}
+
+#NewMessageSearchContainer #TextBoxContainer #SearchBoxContainer {
+	height:30px;
+	width:800px;
+	margin:18px 0px 0px 10px;
+	font-size:18px;
+	position:relative;
+}
+
+#ComposeSearchResultContainer {
+	position:absolute;
+	top:35px;
+	left:0px;
+	height:200px;
+	width:130px;
+}
+
+#NewMessageSearchContainer #TextBoxContainer #SearchBoxContainer #ComposeSearchResult {
+	list-style-type: none;
+
+}
+
+#NewMessageSearchContainer #TextBoxContainer #SearchBoxContainer #ComposeSearchResult li {
+	z-index:500;
+	width:300px;
+	height:60px;
+	line-height:60px;
+	background-color:white;
+
+	
+}
+
+.ComposeImageDiv {
+	width:40px;
+	height:40px;
+	margin:10px 15px 10px 12px;
+	float:left;
+}
+
+#NewMessageSearchContainer #TextBoxContainer #SearchBoxContainer #ComposeSearchResult .ComposeImageDiv img {
+	width:40px;
+	height:40px;
+	border-radius:50%;
+}
+
+#NewMessageSearchContainer #TextBoxContainer #SearchBoxContainer #ComposeSearchResult li:hover {
+	background-color:#b3d1ff;
+	cursor:pointer;
+}
+
+#NewMessageSearchContainer #TextBoxContainer #SearchBoxContainer input {
+	margin-left:15px;
+	height:18px;
+	width:400px;
+}
+
+#MessageIcon {
+    position:relative;
+}
+
+
+
+.BlueCircle {
+	position:absolute;
+	background-color:#1876F2;
+	height:4px;
+	width:4px;
+	border-radius:50%;
+	top:36px;
+	right:15px;
+	display:none;
+}

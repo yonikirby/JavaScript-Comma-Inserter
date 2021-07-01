@@ -1,0 +1,606 @@
+@charset "utf-8";
+/* CSS Document */
+* {
+	margin:auto;
+}
+
+body {
+ background-color:#F0F2F5;
+ margin:auto;
+}
+
+#MainContainer {
+  width:900px;
+  height:1000px;
+  /*border:1px solid;*/
+  position:relative;
+  float:left;
+  margin-left:233px;
+  margin-right:233px;
+}
+
+
+#HeaderContainer {
+  width:1300px;
+  height:50px;
+  background-color:white;
+  display:inline-block;
+  line-height: 50px;
+  white-space: nowrap;
+  float:left;
+  
+}
+
+#HeaderLogoBox {
+  float:left;
+  height:40px;
+  width:40px;
+  margin-top:5px;
+  margin-bottom:5px;
+  margin-left:5px;
+  margin-right:5px;
+  
+}
+
+#HeaderLogoBox img{
+  width:40px;
+  height:40px;
+}
+
+#HeaderSearchBox {
+  float:left;
+  height:50px;
+  width:300px;
+}
+
+#HeaderBrowsePeopleBox {
+  float:left;
+}
+
+#HeaderIconsBox {
+  float:right;
+  min-width:200px;
+  max-width:400px;
+  height:50px;
+  
+}
+
+#HeaderProfilePhotoBox {
+  height:40px;
+  min-width:40px;
+  max-width:150px;
+  float:left;
+  background-color:#E7F3FF;
+  margin-top:5px;
+  margin-bottom:5px;
+  line-height: 40px;
+  white-space: nowrap;
+  font-weight:bold;
+  color:#1877F2;
+}
+
+#HeaderProfilePhotoBox img {
+  height:40px;
+  width:40px;
+  border-radius:50%;
+  vertical-align:middle;
+  float:left;
+}
+
+.IconBox {
+  float:left;
+  width:40px;
+  height:40px;
+  background-color:#E4E6EB;
+  border-radius:50%;
+  margin-top:5px;
+  margin-bottom:5px;
+  margin-left:8px;
+  text-align:center;
+  
+  display: flex;
+  align-items: center;
+  
+}
+
+.IconBox img {
+  width:15px;
+  height:15px;
+
+}
+
+
+
+
+
+#CoverPhotoContainer {
+  width:900px;
+  height:200px;
+  z-index:-100;
+  
+}
+
+#CoverPhotoContainer img {
+  width:900px;
+  height:200px;
+}
+
+#ProfilePhotoContainer {
+  position:absolute;
+  z-index:101;
+  width:200px;
+  height:200px;
+  top:30px;
+  right:350px;
+}
+
+#ProfilePhotoContainer img {
+  width:200px;
+  height:200px;
+  border-radius: 50%;
+}
+
+#NameContainer {
+  margin-top:30px;
+  text-align:center;
+  font-size:32px;
+  font-weight:bold;
+  /*border-bottom:1px solid;*/
+  padding-bottom:20px;
+}
+
+#EditProfile {
+  font-size:16px;
+}
+
+#MenuBar {
+  border-top:1px solid;
+  border-bottom:1px solid;
+  width:900px;
+  height:43px;
+}
+
+#MenuBar .Tab {
+  height:23px;
+  width:100px;
+  margin-top:10px;
+  margin-left:10px;
+  font-size:18px;
+  font-weight:bold;
+  display:inline-block;
+  text-align:center;
+  border:1px solid;
+}
+
+#MenuBar .Tab:hover {
+  background-color:#70b3d4;
+  cursor:pointer;
+}
+
+#AboutTab {
+  background-color:#70b3d4;
+}
+
+
+
+.TextHeader {
+  font-weight:bold;
+  font-size:20px;
+}
+
+.TextBody {
+  margin-left:30px;
+}
+
+#TabsContainer {
+  width:900px;
+  height:600px;
+  position:relative;
+}
+
+
+#AboutArea {
+  width:910px;
+  height:600px;
+  z-index:300;
+  background-color:white;
+  position:absolute;
+  top:0px;
+  left:0px;
+  overflow:scroll;
+}
+
+#PhotosArea {
+  position:absolute;
+  background-color:white;
+  width:910px;
+  height:600px;
+  z-index:-95;
+  top:0px;
+  left:0px;
+  overflow:scroll;
+  display:none;
+}
+
+.OnePhoto {
+  /*180px total width per element*/
+  margin-left:10px;
+  margin-top:10px;
+  width:168px;
+  height:168px;
+  display:inline-block;
+  position:relative;
+  z-index:160;
+}
+
+.OnePhoto img{
+
+  width:168px;
+  height:168px;
+  z-index:161;
+}
+
+
+
+#AddPhotoTab {
+  display: none;
+  background-color:red;
+  height:23px;
+  width:100px;
+  margin-top:10px;
+  margin-left:10px;
+  font-size:18px;
+  font-weight:bold;
+  text-align:center;
+  border:1px solid;
+
+}
+
+
+#AddPhotoTab:hover {
+  cursor:pointer;
+}
+
+#PhotoUpload {
+  width:200px;
+  height:100px;
+  background-color:green;
+  border:1px solid;
+  position:absolute;
+  top:0px;
+  right:0px;
+  z-index:-98;
+  display:none;
+}
+
+#PhotoUpload img {
+  width:10px;
+  height:10px;
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  cursor: pointer;
+  
+}
+
+.DeletePhotoIcon {
+  display:none;
+  position:absolute;
+  bottom: 5px;
+  right:60px;
+  z-index:180;
+  background-color:white;
+  border-radius:50%;
+  width:20px;
+  height:20px;
+  vertical-align: middle;
+  text-align:center;
+}
+
+.DeletePhotoIcon img {
+  width:15px;
+  height:15px;
+}
+
+.DownloadPhotoIcon {
+  display:none;
+  position:absolute;
+  bottom:5px;
+  right:10px;
+  z-index:181;
+  background-color:white;
+  border-radius:50%;
+  width:20px;
+  height:20px;
+  vertical-align: middle;
+  text-align:center;
+  
+}
+
+.DownloadPhotoIcon img {
+  width:15px;
+  height:15px;
+}
+
+.OnePhoto:hover .DeletePhotoIcon {
+  display:inline-block;
+  cursor:pointer;
+}
+
+.OnePhoto:hover .DownloadPhotoIcon {
+  display:inline-block;
+  cursor:pointer;
+}
+
+
+
+#PostsArea {
+  position:absolute;
+  background-color:green;
+  width:910px;
+  height:600px;
+  z-index:-92;
+  top:0px;
+  left:0px;
+  overflow:scroll;
+}
+
+#FriendsArea {
+  position:absolute;
+  background-color:white;
+  width:910px;
+  height:600px;
+  z-index:-91;
+  top:0px;
+  left:0px;
+  overflow:scroll;
+}
+
+#FriendsInnerContainer {
+  width:870px;
+  height:580px;
+  margin-top:20px;
+  margin-left:15px;
+  margin-right:15px;
+}
+
+#FriendsFirstRow{
+  height:40px;
+  width:870px;
+
+}
+
+#FriendsHeaderText {
+  font-size:23px;
+  font-weight:bold;
+  height:40px;
+  width:100px;
+  float:left;
+  
+
+  
+}
+
+#FriendsNumber {
+	width:150px;
+	height:35px;
+	float:left;
+	margin-top:5px;
+}
+
+#FriendsSearchBox {
+  height:37px;
+  width:280px;
+  float:left;
+  margin-top:3px;
+
+}
+
+#FriendRequestsLinkContainer {
+  height:37px;
+  width:120px;
+  float:left;
+  margin-top:3px;
+}
+
+#FriendRequestsLinkContainer button {
+  background-color:white;
+  font-weight:bold;
+  color:blue;
+  border:none;
+  padding:3px;
+}
+
+#FriendRequestsLinkContainer button:hover {
+  background-color:#F0F2F5;
+  cursor:pointer;
+}
+
+#FindFriendsLinkContainer {
+  height:37px;
+  width:90px;
+  float:left;
+  margin-top:3px;
+  margin-left:10px;
+}
+
+#FindFriendsLinkContainer button {
+  background-color:white;
+  font-weight:bold;
+  color:blue;
+  border:none;
+  padding:3px;
+}
+
+#FindFriendsLinkContainer button:hover {
+  background-color:#F0F2F5;
+  cursor:pointer;
+}
+
+#BrowsePeopleLinkContainer {
+  height:37px;
+  width:105px;
+  float:left;
+  margin-top:3px;
+  margin-left:13px;
+}
+
+#BrowsePeopleLinkContainer button {
+  background-color:white;
+  font-weight:bold;
+  color:blue;
+  border:none;
+  padding:3px;
+}
+
+#BrowsePeopleLinkContainer button:hover {
+  background-color:#F0F2F5;
+  cursor:pointer;
+}
+
+
+
+/*
+.CircleDiv:hover + .UnfriendMenu {
+  display: block;
+}
+*/
+
+#FriendsListContainer {
+  margin:auto;
+  
+}
+
+.OneFriendContainer {
+  width:650px;
+  height:115px;
+  background-color:white;
+  margin-top:15px;
+  margin-bottom:15px;
+  border-radius:15px;
+}
+
+.OneFriendProfilePhoto {
+  width:93px;
+  height:115px;
+  float:left;
+  
+}
+
+.OneFriendProfilePhoto img {
+  width:63px;
+  height:63px;
+  border-radius:50%;
+  margin-top:15px;
+  margin-left:15px;
+  margin-right:15px;
+}
+
+.OneFriendMiddleDiv {
+  height:100px;
+  width:230px;
+  padding-top:15px;
+  float:left;
+}
+
+.OneFriendNameDiv {
+  height:15px;
+  width:230px;
+  font-size:17px;
+  font-weight:bold;
+}
+
+.OneFriendNameDiv a {
+  color:black;
+  text-decoration:none;
+}
+
+.OneFriendNameDiv a:hover {
+  cursor:pointer;
+  text-decoration:underline;
+}
+
+.OneFriendInfoDiv {
+  height:60px;
+  width:230px;
+  font-size:15px;
+  margin-top:10px;
+  
+}
+
+.OneFriendIconDiv {
+  float:left;
+  height:115px;
+  width:307px;
+
+}
+
+.OneFriendIconContainer {
+  width:27px;
+  height:27px;
+  border-radius:50%;
+  margin-top:30px;
+  background-color:#E4E6EB;
+  padding:5px;
+  margin-left:230px;
+  
+}
+
+.OneFriendIconContainer img {
+  height:27px;
+  width:27px;
+  border-radius:50%;
+  
+}
+
+.OneFriendAcceptButton {
+  width:87px;
+  height:40px;
+  display:none;
+  margin-top:30px;
+  margin-left:195px;
+  background-color:#1877F2;
+  color:white;
+  border-radius:5%;
+  border:none;
+}
+
+.OneFriendCurrentlyFriendsButton {
+  width:87px;
+  height:40px;
+  display:none;
+  margin-top:30px;
+  margin-left:195px;
+  background-color:#3BB54A;
+  color:white;
+  border-radius:5%;
+  border:none;
+  line-height:40px;
+}
+
+.OneFriendCurrentlyFriendsButton img {
+  width:20px;
+  height:20px;
+  float:left;
+  margin-top:10px;
+}
+
+.UnblockButton {
+  background-color:red;
+  display:none;
+  margin-left:195px;
+  width:87px;
+  margin-top:5px;
+}
+
+.imgAddFriend {
+  
+}
+
+.imgCancelAddFriend {
+  background-color:#0571ED;
+  display:none;
+  
+}
+
+
