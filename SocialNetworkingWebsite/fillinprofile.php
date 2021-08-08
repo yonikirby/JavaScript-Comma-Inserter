@@ -3,7 +3,7 @@ include("config.php");
 
 
 $myID = $_SESSION["userid"];
-//echo '<script type="text/javascript">alert("myID is '.$myID.'");</script>';
+
 
 
 if(isset($_POST['but_upload'])){
@@ -193,7 +193,7 @@ if(isset($_POST['submitHobbies']))
               </div>
           
               <div id = "ProfilePhotoImageDiv">
-                    <!--<img src = "images/yoniprofilephoto.jpg" />-->
+                    
                     <?php
 
                       
@@ -339,7 +339,7 @@ if(isset($_POST['submitHobbies']))
                           ?>
                           
                 
-                          <!--<input type="text" name="MyBio" >-->
+                         
                           <textarea name="MyBio" id="MyBio"><?php echo $bio_text; ?></textarea>
                 </form>
 
@@ -391,7 +391,7 @@ if(isset($_POST['submitHobbies']))
                           ?>
                           
                 
-                          <!--<input type="text" name="MyHobbies" id="MyHobbies" value = ''>-->
+                       
                           <textarea name="MyHobbies" id="MyHobbies"><?php echo $hobbies_text; ?></textarea>
                 </form>
 

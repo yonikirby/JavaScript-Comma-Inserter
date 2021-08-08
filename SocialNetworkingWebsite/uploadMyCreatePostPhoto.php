@@ -6,19 +6,12 @@ $myID = $_SESSION["userid"];
 
 								$output = '';
 
-								$output .= '<script>alert("got in here!");</script>';
+								
 							  
-							  //$data = $_POST['MyData'];
-							
 							  
-							  //echo $output;
 							  $name = $_FILES['file']['name'];
 							  
-							  //echo $name;
 							  
-							  //$output .= $name;
-							  
-							  //echo $output;
 							  
 							  $dir = "upload/".$myID."/";
 							  if ( !file_exists( $dir ) && !is_dir( $dir ) ) {
@@ -47,7 +40,7 @@ $myID = $_SESSION["userid"];
 								
 							   
 								if (!mysqli_query($con,$query)){
-									//echo '<script type="text/javascript">alert("'.mysqli_error($con).'");</script>';
+									echo '<script type="text/javascript">alert("'.mysqli_error($con).'");</script>';
 									//mysqli_close($con);
 								}
 							  

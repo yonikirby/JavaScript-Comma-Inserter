@@ -52,9 +52,7 @@ if ($myID == 0) {
                         $data=mysqli_fetch_assoc($result);
                         $numNewMessages = $data['total'];
 
-                        //echo '<script type="text/javascript">alert("numNewMessages is: '.$numNewMessages.'");</script>';
-                        
-						
+                       
 						
 						if(isset($_POST['CreatePostImageFile'])){
 								echo '<script>alert("got in here!");</script>';
@@ -147,10 +145,9 @@ if ($myID == 0) {
   											</ul>
   								</div>
   							
-    							<!--<input id="myInput" type="text" name="mySear" placeholder="Country">-->
+    						
   							</div>
-  							<!--<input type="submit">-->
-							<!--</form>-->
+  							
                   
                 </div>
                 
@@ -217,15 +214,13 @@ if ($myID == 0) {
 											
 											<div id = "CreatePostUpload">
 
-												<!--<form method="post" action="header.php" enctype="multipart/form-data" id="UploadCreatePostImage"  >-->
 												  Select Image to Upload:
 												  
-												  <!--<input type="hidden" value="123" />-->
 												  
 												  <input type='file' name='CreatePostImageFile' id = "CreatePostImageFile" />
 												  
 												  <input type='button' onclick = "uploadCreatePostPhoto()" value='Save' name='but_upload' id = "CreatePostImageSubmit" />
-												<!--</form>-->
+											
 												
 												
 												  <img src="images/cancel.png" onclick="closeCreatePostUploadPhoto()"/>
@@ -280,7 +275,7 @@ if ($myID == 0) {
                                             <?php echo $firstname . ' ' . $lastname; ?>
 
                                 </div>
-                                <!--https://stackoverflow.com/questions/3793090/html-is-there-any-way-to-show-images-in-a-textarea-->
+                              
                                 <div contentEditable = "true" id="CreateProfileInput" name="CreateProfileInput">What's on your mind, <?php echo $firstname ?>?</div>
                                     
                                 <div id = "AddToYourPost">
@@ -370,7 +365,6 @@ if ($myID == 0) {
                                                             
                                                         }
 
-                            //echo '<script type="text/javascript">alert("got here");</script>';
 
 
                             while ($row = mysqli_fetch_array($result)) {
@@ -424,11 +418,9 @@ $(document).ready(function(){
                             var search = escape($(this).val());
                             
                             
-                            //var ul = document.getElementById("SearchResult");
                             $( "#SearchResult").empty();
                             
-                            //while(ul.firstChild) { ul.removeChild(ul.firstChild); }
-                            //alert("got here 1: " + search);
+                            
                             
                             if(search != "" && search != currentValue){
 
@@ -439,7 +431,6 @@ $(document).ready(function(){
                                     dataType: 'json',
                                     success:function(response){
                                     
-                                        //alert ("got here 2: " + JSON.stringify(response));
                                     
                                         currentValue = search;
                                     
@@ -447,7 +438,6 @@ $(document).ready(function(){
                                         
                                         for( var i = 0; i<len; i++){
                                         
-                                            //alert ("got here 3");
                                             var id = response[i]['id'];
                                             var name = response[i]['name'];
                                             var profilephotopath = response[i]['profilephotopath'];
@@ -495,7 +485,7 @@ function focusTagSearch(){
     $( "#TagSearch").empty();
     if (document.getElementById("TagSearch").value == "Search for friends"){
             $("#TagSearch").css("color","#96999D");
-            //setCaretPosition("#TagSearch", 0);
+            
             $("#TagSearch").value = "";
             alert("got here 2");
             
@@ -503,27 +493,7 @@ function focusTagSearch(){
 
 }
 
-/*
-function setCaretPosition(elemId, caretPos) {
-        var elem = document.getElementById(elemId);
 
-        if(elem != null) {
-                if(elem.createTextRange) {
-                    var range = elem.createTextRange();
-                    range.move('character', caretPos);
-                    range.select();
-                }
-                else {
-                    if(elem.selectionStart) {
-                        elem.focus();
-                        elem.setSelectionRange(caretPos, caretPos);
-                    }
-                    else
-                        elem.focus();
-                }
-        }
-}
-*/
 
 // Set Text to search box and get details
 function selectUser(element){
@@ -547,13 +517,11 @@ $('#headerSearchFriends').keydown(function (e) {
 
 function showCreatePost(){
     
-    //$("#OpaqueDiv").css("display", "block");
-    //$("body").css("opacity", ".4");
+ 
     $("#OpaqueDiv").css("display", "block");
     $("#CreatePost").css("display", "block");
     
-    //$("#CreatePost").css("background-color", "rgba(255, 255, 255, 1)");
-    //$("#CreatePost").css("opacity", "1.0");
+
 }
 
 function hideCreatePost(){

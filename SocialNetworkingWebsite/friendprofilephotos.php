@@ -2,7 +2,7 @@
 include("config.php");
 
 $myID = $_GET['friendid'];
-//$_SESSION["LastTabActivated"] = "Photos";
+
 
 
 

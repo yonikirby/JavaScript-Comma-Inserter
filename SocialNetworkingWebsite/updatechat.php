@@ -8,13 +8,13 @@ $most_recent_message_id = 0;
 
 $response = '';
 
-//$response .= '<h1>HIIIIIII</h1><script>alert("got here and most recent message is is:</script>';
+
 
 if (isset ($_POST['MostRecentID'])) {
 
     $most_recent_message_id = $_POST['MostRecentID'];
 
-    //$response .= '<script>alert("got here and most recent message is from POST: "'.$most_recent_message_id.')</script>';
+
 
     $myID = $_SESSION["userid"];
     $friendid = $_SESSION['friendid'];
@@ -40,9 +40,7 @@ if (isset ($_POST['MostRecentID'])) {
     }
 
     
-    //echo '<script type="text/javascript">alert("userone: '.$user1.' usertwo: '.$user2.' mostrecentmessageid: '.$most_recent_message_id
-    //.' actionuserid: '.$action_user_id.'");</script>';
-    
+
 
 
 $sql = "SELECT * FROM chatmessages WHERE user_one_id = '$user1' AND user_two_id = '$user2' AND id > '$most_recent_message_id' 
@@ -58,7 +56,7 @@ AND action_user_id = '$action_user_id'
     }
 
 
-    //$response .= '<script>alert("user1 is '.$user1.' and user2 is '.$user2.'");</script>';
+
 
 
 
@@ -78,7 +76,7 @@ AND action_user_id = '$action_user_id'
 
 
 
-    //$response .= '<script type="text/javascript">alert("num results is: "'.$numResults.');</script>';
+
     
     while ($row = mysqli_fetch_array($result)) {
         

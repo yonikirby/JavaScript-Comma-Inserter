@@ -4,13 +4,7 @@
 
    
    
-   /*
-   google making social network with php and mysql
    
-   if ($_POST['password'] != $_POST['repeat-password']){
-     echo '<script type="text/javascript">alert("Two password fields need to be identical.");</script>';
-   }
-   */
    
    
    if($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -45,7 +39,7 @@
         $_SESSION["firstname"] = mysqli_real_escape_string($con,$_POST['firstname']);
         $_SESSION["lastname"] = mysqli_real_escape_string($con,$_POST['lastname']);
         $_SESSION["birthday"] = mysqli_real_escape_string($con,$_POST['birthday']);
-        //echo "Session variables are set.";
+       
         $myEmail = $_SESSION["email"];
         
         $sql = "select id from userinfo where email='$myEmail'";
@@ -70,7 +64,7 @@
         
         $_SESSION["userid"] = $myID;
         
-        //echo '<script type="text/javascript">alert("session userid is '.$_SESSION["userid"].'");</script>';
+        
         
         header("Location: fillinprofile.php");
         exit();
@@ -79,10 +73,7 @@
       
       
       
-      
-      //$result = mysqli_query($db,$sql);
-      
-      //echo '<script type="text/javascript">alert("'.$result.'");</script>';
+
    }
 ?>
 

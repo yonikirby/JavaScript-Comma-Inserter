@@ -15,7 +15,7 @@ include("config.php");
 
     $sql = "SELECT id, firstname, lastname, profilephotopath FROM userinfo where firstname like '%".$searchText."%' order by firstname asc limit 5";
 
-    //$result = mysqli_query($con,$sql);
+   
 
 	if (!$result = mysqli_query($con,$sql)){
                             echo '<script type="text/javascript">alert("'.mysqli_error($con).'");</script>';

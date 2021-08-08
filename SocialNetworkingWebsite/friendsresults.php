@@ -109,20 +109,14 @@ ORDER BY
 	
 	
 	";
-	/*
-	ABS( DAYOFYEAR(birthday) - (DAYOFYEAR(CURDATE()) ) ASC
-	LIMIT 6
-	*/
+	
 	
 	
 	if (!$result = mysqli_query($con,$sql)){
                           		echo '<script type="text/javascript">alert("'.mysqli_error($con).'");</script>';
                           		
                       		}
-/*while ($row = mysqli_fetch_array($result)) {
-	echo '<script type="text/javascript">alert("'.$row[0].'");</script>';
-}
-*/
+
 
 
 while ($row = mysqli_fetch_array($result)) {

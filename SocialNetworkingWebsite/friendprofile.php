@@ -157,10 +157,6 @@ if(isset($_POST['but_upload'])){
                       
                       <?php echo $firstname; ?>&nbsp;<?php echo $lastname; ?>
               
-                <!--<div id = "EditProfile">
-                    <a href="fillinprofile.php">Edit Profile</a>
-                  
-                </div>-->
               
               
             </div>
@@ -266,7 +262,7 @@ if(isset($_POST['but_upload'])){
           document.getElementById("AboutArea").style.display = "none";
           document.getElementById("FriendsArea").style.display = "none";
           document.getElementById("PostsArea").style.display = "none";
-          //document.getElementById("AddPhotoTab").style.display = "inline-block";
+          
           $("#PhotosArea").load('friendprofilephotos.php?friendid=' + <?php echo $myID ?> );
           
           
@@ -313,14 +309,14 @@ if(isset($_POST['but_upload'])){
           document.getElementById("PhotosArea").style.display = "none";
           document.getElementById("FriendsArea").style.display = "block";
           document.getElementById("PostsArea").style.display = "none";
-          //$("#FriendsInnerPHPContainer").load('myprofileallfriends.php');
+          
           $("#FriendsArea").load('myprofileallfriends.php?friendid=' + <?php echo $myID ?> );
         }
         
         function openFriendMessenger(){
         	document.getElementById("ChatForm").submit();
         	
-        	//window.location.replace("chat.php?friendid=" + <?php echo $myID ?> );
+        
         }
 
 			
@@ -346,7 +342,7 @@ if(isset($_POST['but_upload'])){
 			  }
 			  
 			  function test(){
-			    //alert("aha!");
+			    
 			    document.getElementById("HeaderContainer").style.width = "1300px";
 			  }
 			  

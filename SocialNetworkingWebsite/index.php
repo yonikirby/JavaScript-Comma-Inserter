@@ -3,24 +3,12 @@
    include("config.php");
 
    
-
-   if (isset($_POST['forgotpasswordemail'])){
-        echo '<h1>hi!!!!</h1><script type="text/javascript">alert("got inside post");</script>';
-        echo '<h1>hi!!!!</h1><script type="text/javascript">console.log("got inside post")</script>';
-    }
-
-    if (isset($_GET['forgotpasswordemail'])){
-        echo '<h1>hi!!!!</h1><script type="text/javascript">alert("got inside post");</script>';
-        echo '<h1>hi!!!!</h1><script type="text/javascript">console.log("got inside post")</script>';
-    }
    
    if($_SERVER["REQUEST_METHOD"] == "POST") {
       // username and password sent from form
-      //echo '<script type="text/javascript">alert("Got here");</script>';
 
         if (isset($_POST['forgotpasswordemail'])){
-            echo '<script>alert("got inside post 2");</script>';
-            echo '<h1>hi!!!!</h1><script type="text/javascript">console.log("got inside post 2")</script>';
+       
         }
                             
         else {
@@ -49,8 +37,7 @@
                                 
 
                                 $ProperPassword = $row['password'];
-                                //echo '<script type="text/javascript">alert("Entered password is: '.$mypassword.'   .  Actual password is '.$ProperPassword.' .");</script>';
-                                
+                              
                                 if ($mypassword != $ProperPassword){
                                 echo '<script type="text/javascript">alert("Error: wrong password");</script>';
                                 }
@@ -73,9 +60,7 @@
         }
       
       
-      //$result = mysqli_query($db,$sql);
       
-      //echo '<script type="text/javascript">alert("'.$result.'");</script>';
    }
 ?>
 <!doctype html>
@@ -195,17 +180,7 @@ function forgotPassword(){
             alert( "A link containing information on how to reset your password has been sent to your email." );
         });
 
-        /*
-        $.ajax({
-        url: "index.php",
-        type: "POST",
-        dataType:'json',
-        data: {forgotpasswordemail: emailValue},
-        success: function(data){
-            alert( "A link containing information on how to reset your password has been sent to your email 2." );
-        }
-        });
-        */
+        
 
     }
        

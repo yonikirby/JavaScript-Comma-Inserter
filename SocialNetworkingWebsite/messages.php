@@ -12,8 +12,6 @@
   </head>
 
 <body>
-testing123
-<br /><br />hi<br /><br />hi<br /><br />hi<br /><br />hi<br /><br />hi<br /><br />hi<br /><br />hi<br /><br />hi<br /><br />hi<br /><br />hi<br /><br />hi<br /><br />hi<br /><br />hi
 <?php
     $most_recent_message_id = 0;
 
@@ -38,8 +36,6 @@ testing123
         }
 
 
-
-        //echo '<script type="text/javascript">alert("got inside getmessages");</script>';
 
 
         $sql = "SELECT * FROM chatmessages WHERE user_one_id = '$user1' AND user_two_id = '$user2' 
@@ -125,12 +121,5 @@ setInterval(function(){
 
 
 
-
-
-
-<!--
-testing123
-<br /><br />hi<br /><br />hi<br /><br />hi<br /><br />hi<br /><br />hi<br /><br />hi<br /><br />hi<br /><br />hi<br /><br />hi<br /><br />hi<br /><br />hi<br /><br />hi<br /><br />hi
--->
 </body>
 </html>

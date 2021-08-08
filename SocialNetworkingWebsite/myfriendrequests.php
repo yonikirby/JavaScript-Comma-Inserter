@@ -81,9 +81,7 @@ if(isset($_POST['myDeleteFriendshipRequestID'])){
   <link rel="stylesheet" href="css/sentrequestsstyle.css">
 
 </head>
-<!--Continuing MainContainer:
-https://www.codedodle.com/social-network-friends-database/
--->
+
 <body>
   
   <div id = "SentRequests">
@@ -200,9 +198,7 @@ https://www.codedodle.com/social-network-friends-database/
                                         
                                         $i = 0;
                                         
-                                        //echo '<script type="text/javascript">alert("Line 87: Result is '.$result.'");</script>';
-                                            
-                                        
+                                       
                                             
                                         while ($row = mysqli_fetch_array($result)) {
                                            
@@ -215,8 +211,6 @@ https://www.codedodle.com/social-network-friends-database/
                                               $datetime1 = new DateTime($TimesOfRequest[$i]);
                                               $datetime2 = new datetime(date("Y-m-d H:i:s"));
                                               $interval = $datetime1->diff($datetime2);
-                                              //echo '<script type="text/javascript">alert("'.$interval->format('%Y years %m months %d days %H hours %i minutes %s seconds').'");</script>';
-                                              //echo $interval->format('%Y years %m months %d days %H hours %i minutes %s seconds');//00 years 0 months 0 days 08 hours 0 minutes 0 seconds
                                               $yearString = $interval->format('%Y');
                                               $monthString = $interval->format('%m');
                                               $dayString = $interval->format('%d');
@@ -344,15 +338,12 @@ https://www.codedodle.com/social-network-friends-database/
       <script>
       
         function acceptFriendshipDoCSS(userID){
-                //alert("got here 2 for user: "+ userID);
-                //$( ".OneFriendIconDiv").remove();
-                
+             
                 
                 $( "#OneFriendBox" + userID ).remove();
         }
       
       function acceptFriendship(userID){
-                //alert("got here for user: " + userID);
                 acceptFriendshipDoCSS(userID);
                 
 
@@ -361,8 +352,7 @@ https://www.codedodle.com/social-network-friends-database/
                                               userID
                 },
                     function(data){
-                        //cancelFriendDoCSS(requesteeID);
-                        // callback function gets executed
+                        
                         
                 });
         
@@ -372,7 +362,7 @@ https://www.codedodle.com/social-network-friends-database/
         
         
         function deleteFriendshipRequest(userID){
-                //alert("got here for user: " + userID);
+              
                 acceptFriendshipDoCSS(userID);
 
                 
