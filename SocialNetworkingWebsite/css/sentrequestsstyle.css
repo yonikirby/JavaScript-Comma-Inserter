@@ -1,0 +1,80 @@
+#InnerContainer {
+  margin-left:10px;
+  margin-right:10px;
+  margin-top:10px;
+  width:480px;
+  height:550px;
+
+}
+
+#NumOfSentRequests {
+  font-size:19px;
+  font-weight:bold;
+  margin-bottom:10px;
+}
+
+
+.OneSentFriendRequest {
+  width:480px;
+  height:60px;
+  margin-bottom:10px;
+}
+
+.PhotoContainer {
+  height:60px;
+  width:60px;
+  border-radius:50%;
+  float:left;
+}
+
+.PhotoContainer img{
+  height:60px;
+  width:60px;
+  border-radius:50%;
+}
+
+.InfoContainer {
+  height:60px;
+  width:150px;
+  margin-left:10px;
+  float:left;
+}
+
+.SentNameContainer {
+  font-size:16px;
+  font-weight:bold;
+  margin-top:7px;
+}
+
+.SentNameContainer a {
+  color:black;
+  text-decoration:none;
+}
+
+.SentNameContainer a:hover {
+  text-decoration:underline;
+  cursor:pointer;
+}
+
+.MutualFriendsContainer {
+  font-size:13px;
+  margin-top:5px;
+  color:#9C9DA0;
+}
+
+.CancelRequestContainer {
+  float:right;
+  height:60px;
+  width:200px;
+}
+
+.CancelButton {
+  width:150px;
+  height:40px;
+  background-color:#E4E6EB;
+  margin-top:10px;
+  margin-left:50px;
+  border:none;
+  font-weight:bold;
+  border-radius:3%;
+}

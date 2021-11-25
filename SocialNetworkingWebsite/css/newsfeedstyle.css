@@ -1,0 +1,675 @@
+body {
+    position:relative;
+}
+#OpaqueDiv {
+    display:none;
+    opacity:0.8;
+    
+    position:absolute;
+    /*
+    top:0px;
+    left:0px;
+    bottom:0px;
+    right:0px;
+    */
+    width:100vw;
+    height:100vh;
+    z-index:9999999;
+    background-color:grey;
+}
+
+  
+  #NewsfeedContainer {
+    margin:auto;
+    width:620px;
+    position:relative;
+    height:600px;
+  }
+
+  #ShareToFriendsWall {
+      position: absolute;
+      top:100px;
+      margin-left:60px;
+      width:500px;
+      height:500px;
+      background-color: white;
+      display: none;
+      z-index:999999999;
+  }
+
+  #ShareToFriendsWall #TopDiv {
+    border-bottom:1px solid #E5E5E5;
+    font-size:19px;
+    font-weight: bold;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:18px 0px 18px 0px; 
+    display: relative;
+    height:19px;
+    width:500px;
+  }
+
+  #ShareToFriendsWall #TopDiv #ShareToFriendsWallCancelButton {
+    border-radius: 50%;
+    background-color: #E4E6EB;
+    width:29px;
+    height:29px;
+    top:13px;
+    right:13px;
+    position: absolute;
+  }
+
+  #ShareToFriendsWall #TopDiv #ShareToFriendsWallCancelButton:hover {
+      cursor: pointer;
+  }
+
+  #ShareToFriendsWall #TopDiv #ShareToFriendsWallCancelButton img {
+      width:19px;
+      height:19px;
+      margin:5px 5px 5px 5px;
+      border-radius: 50%;
+  }
+
+
+
+  #ShareToFriendsWallSearch #MyInput {
+    float:left;
+    background-color:#F0F2F5;
+    border:none;
+    border-radius:20px;
+    width:420px;
+    height:33px;
+    margin:9px 0px 5px 14px;
+    position:relative;
+  }
+  
+  #ShareToFriendsWallSearch #MyInput input {
+    background-color:#F0F2F5;
+    border:none;
+    width:360px;
+    height:31px;
+  
+    border:none;
+    left:30px;
+    top:0px;
+    position:absolute;
+    background-color:#F0F2F5;
+    color:#ABADB1;
+  }
+  
+  #ShareToFriendsWallSearch #MyInput img {
+    position:absolute;
+    top:9px;
+    left:9px;
+    width:15px;
+    height:15px;
+  }
+  
+  #ShareToFriendsWallSearch a {
+    float:left;
+    color:#3B80DF;
+    text-decoration: none;
+    margin-left:20px;
+    font-weight:bold;
+  }
+  
+  #ShareToFriendsWallSearch a:hover {
+    cursor:pointer;
+  }
+  
+  #ShareToFriendsWallSuggestionsHeader {
+    margin:0px 0px 7px 14px;
+    color:#6E7074;
+    font-size:12px;
+    width:400px;
+    height:40px;
+    font-weight: 600;
+  }
+  
+  .ShareToFriendsWallSuggestionsOneFriend {
+    width:516px;
+    height:35px;
+    margin: 0px 0px 0px 14px;
+  }
+
+  .OneShareToFriendsWallResult {
+    width:500px;
+    height:51px;
+    border-radius:5px;
+    line-height:51px;
+    font-size:13px;
+    color:#4B4B4B;
+    font-weight: 600;
+    position: relative;
+  }
+  
+  .OneShareToFriendsWallResult:hover {
+    background-color: #E3E4E5;
+    cursor:pointer;
+  }
+  
+  .OneShareToFriendsWallResult img {
+    float:left;
+    margin:7px 11px 7px 7px;
+    height:37px;
+    width:37px;
+    border-radius: 50%;
+  }
+
+  .OneShareToFriendsWallResult .RightArrowDiv {
+      position:absolute;
+      height:19px;
+      width:19px;
+      top:10px;
+      right:20px;
+
+  }
+
+  .OneShareToFriendsWallResult .RightArrowDiv img {
+    height:19px;
+    width:19px;
+  }
+
+  #NewsfeedPostSomething {
+    width:620px;
+    height:115px;
+  }
+  
+  
+  
+  #NewsfeedCreatePost {
+      width:620px;/* +145*/
+      height:130px;
+      
+      margin: 20px 0px 0px 0px;
+      padding:20px 0px 0px 0px;
+      border:1px #E2E4E6;
+      border-radius:5px;
+      background-color:white;
+  }
+  
+  #NewsfeedCreatePostInner {
+      margin:13px 13px 13px 13px;
+  }
+  
+  #NewsfeedCreatePostTop {
+      width:594px;/*+145 */
+      height:52px;
+      line-height:52px;
+      border-bottom:1px solid #E4E6EB;
+  }
+  
+  #NewsfeedCreatePostTop #NewsfeedCreatePostProfileSrc {
+      width:40px;
+      height:40px;
+      border-radius:50%;
+      float:left;
+  }
+  
+  #NewsfeedWhatsOnYourMind {
+      height:40px;
+      width:542px;/*+145*/
+      float:right;
+      background-color:#F0F2F5;
+      color:#60628F;
+      border-radius:20px;
+      line-height:40px;
+      font-size:16px;
+      
+  }
+  
+  #NewsfeedWhatsOnYourMind:hover {
+      background-color:#E4E6E9;
+      cursor:pointer;
+  }
+  
+  
+  
+  #NewsfeedCreatePostAddPhotoDiv {
+      margin:10px 0px 0px 0px;
+      font-size:14px;
+      height:35px;
+      width:150px;
+      line-height:35px;
+      border-radius:5px;
+  }
+  
+  #NewsfeedCreatePostAddPhotoDiv:hover {
+      cursor:pointer;
+      background-color:#F2F2F2;
+  }
+  
+  #NewsfeedCreatePostAddPhoto {
+  
+      width:25px;
+      height:25px;
+      border-radius:50%;
+      float:left;
+      margin:5px 5px 5px 30px;
+      
+  }
+  
+
+  .OneNewsfeedItem {
+    width:620px;
+    min-height:115px;
+    background-color:white;
+    margin-top:15px;
+    margin-bottom:15px;
+    border-radius:15px;
+    height:auto;
+  }
+
+
+  .NewsfeedOnePost {
+    width:620px; /*+145*/
+	
+	border:1px #E2E4E6;
+	border-radius:15px;
+	background-color:white;
+    margin-top:15px;
+    margin-bottom:15px;
+    padding-top:5px;
+    padding-bottom:5px;
+    min-height: 1px;
+    height:auto;
+}
+
+.NewsfeedOnePostInner {
+	margin:13px 13px 13px 13px;
+}
+
+.NewsfeedOnePostInner img {
+  width:594px;
+}
+
+.NewsfeedOnePostTop {
+	width:594px;
+	min-height:52px;
+	
+	
+}
+
+.NewsfeedOnePostTop .NewsfeedOnePostProfileSrc {
+	width:40px;
+	height:40px;
+	border-radius:50%;
+	float:left;
+    margin:0px 10px 0px 0px;
+}
+
+.NewsfeedOnePostNameDiv {
+    font-size:14px;
+    font-weight:600;
+    margin:0px 0px 5px 0px;
+    min-height:14px;
+    min-width:1px;
+    
+}
+
+.NewsfeedOnePostNameDiv a {
+    text-decoration: none;
+    color:black;
+}
+
+.NewsfeedOnePostNameDiv a:hover {
+  text-decoration: underline;
+}
+
+
+.NewsfeedOnePostTimeDiv {
+    font-size:11px;
+    color:#97679B;
+}
+
+.LikeCommentShare {
+    width:594px;
+    height:40px;
+    border-top: 1px solid #CED0D4;
+    border-bottom: 1px solid #CED0D4;
+    margin:15px 0px 0px 0px;
+    font-weight: bold;
+    font-size:15px;
+}
+
+.LikeCommentShare img {
+    float:left;
+    height:16px;
+    width:16px;
+    margin-right:10px;
+}
+
+.LikeDiv {
+    width:198px;
+    height:40px;
+    float:left;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.CommentDiv {
+    width:198px;
+    height:40px;
+    float:left;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.ShareDiv {
+    width:198px;
+    height:40px;
+    float:left;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    position: relative;
+}
+
+.ShareDivHidden {
+    display:none;
+    position:absolute;
+    top:40px;
+    left:0px;
+    width:198px;
+    height:81px;
+    
+}
+
+.ShareDivHiddenSelf {
+    width:198px;
+    height:41px;
+    line-height: 41px;
+    text-align: center;
+    background-color: #89B4E4;
+    border-bottom:1px solid black;
+}
+
+.ShareDivHiddenSelf:hover {
+    cursor: pointer;
+    background-color:#1C72D3;
+}   
+
+.ShareDivHiddenLine {
+    width:198px;
+    height:0px;
+    border-top:1px solid black;
+    border-bottom:1px solid black;
+}
+
+.ShareDivHiddenFriend {
+    width:198px;
+    height:40px;
+    line-height: 40px;
+    text-align: center;
+    background-color: #89B4E4;
+}
+
+.ShareDivHiddenFriend:hover {
+    cursor: pointer;
+    background-color:#1C72D3;
+}   
+
+.LikeInnerDiv {
+    
+}
+
+.CommentInnerDiv {
+    
+}
+
+.ShareInnerDiv {
+    
+}
+
+.ItemButton:hover {
+    cursor: pointer;
+    background-color: #F2F2F2;
+}
+
+.NewsfeedPostLikes {
+    display:none;
+    width:594px;
+    height:40px;
+    border-top: 1px solid #CED0D4;
+    font-size:15px;
+    color:#65676B;
+    line-height:40px;
+    margin-top:15px;
+}
+
+.NewsfeedPostLikes a {
+    text-decoration: none;
+    color:#65676B;
+}
+
+.NewsfeedPostLikes a:hover {
+    text-decoration: underline;
+}
+
+.NewsfeedPostLikes img {
+    height:22px;
+    width:22px;
+    float:left;
+    margin-right:10px;
+    margin-top:8px;
+}
+
+.WriteCommentDiv {
+    width: 542px;
+    height:auto;
+    min-height:40px;
+    margin:10px 0px 0px 0px;
+    /*display: flex;*/
+    z-index:0;
+    
+}
+
+.WriteCommentDiv img{
+    float:left;
+    width:32px;
+    height:32px;
+    margin:4px 5px 4px 0px;
+    border-radius:50%;
+}
+
+.NewsfeedMakeComment {
+    float:left;
+    height:auto;
+    min-height:20px;
+    width:480px;/*+145*/
+    margin:auto;
+    background-color:#F0F2F5;
+    color:#60628F;
+    border-radius:20px;
+
+    font-size:16px;
+    padding-left:10px;
+    padding-top:10px;
+    padding-bottom:10px;
+    z-index:0;
+}
+
+.NewsfeedOneComment {
+   
+   
+    margin:10px 0px 0px 0px;
+
+    
+}
+
+.NewsfeedOneComment img{
+    float:left;
+    width:32px;
+    height:32px;
+    margin:4px 10px 4px 0px;
+    border-radius:50%;
+}
+
+.NewsfeedOneComment .RightDiv {
+   
+    float:left;
+
+}
+
+.NewsfeedOneComment .RightDiv .TextDiv {
+   
+    background-color:#F0F2F5;
+    border-radius:15px;
+    float:left;
+    padding:9px 9px 9px 9px;
+    font-size:16px;
+    position: relative;
+
+}
+
+.NewsfeedOneComment .RightDiv .TextDiv .NameDiv {
+    font-size:13px;
+    font-weight:bold;
+}
+
+.NewsfeedOneComment .RightDiv .OptionsDiv {
+    padding: 0px 0px 0px 9px;
+    color: #65676B;
+    font-size: 12px;
+    position:relative;
+    margin:40px 0px 0px 0px;
+}
+
+.NewsfeedOneComment .RightDiv .OptionsDiv .LikeCommentLink:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.NewsfeedOneComment .RightDiv .OptionsDiv .ReplyCommentLink:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+
+.CommentLikeDisplay {
+    position:absolute;
+    bottom: 3px;
+    right: -29px;
+    background-color: white;
+    border-radius: 4px;
+    border:1px solid #F7F7F7;
+    display: none;
+
+
+}
+
+.CommentLikeDisplay img {
+    float:left;
+    width:10px;
+    height:10px;
+    border-radius: 50%;
+    
+}
+
+.CommentLikeDisplayPeople {
+    position:absolute;
+    top: 47px;
+    right: -60px;
+    border-radius: 4px;
+    border:1px solid #F7F7F7;
+    display: none;
+    background: rgba(60, 60, 60, 0.9);
+    color: #B0B3B8;
+    font-size:14px; 
+    z-index:9999999;
+    padding:0px 12px 12px 12px;
+    
+}
+
+.CommentLikeDisplayPeople .ImageContainer {
+    width:20px;
+    height:20px;
+    margin:8px 0px 0px 4px;
+    display: inline-block;
+    border-radius: 50%;
+    background-color: #129BF6;
+    float:left;
+}
+
+.CommentLikeDisplayPeople .ImageContainer img {
+    width:14px;
+    height:14px;
+    border-radius: 50%;
+    margin:3px 3px 3px 3px;
+}
+
+.CommentLikeDisplayPeopleNum {
+    display: inline;
+    margin: 10px 0px 9px 8px;
+    float:left;
+}
+
+.CommentLikeDisplayNumber {
+    display: inline;
+}
+
+.LikeCommentLink {
+    color:#65676B;
+}
+
+.CommentLikeDisplayPeopleList{
+    float:left;
+    z-index:9999999;
+}
+
+.CommentLikeDisplay_is_shown  {
+    display: block;
+}
+
+.WriteReplyDiv {
+    width: 442px;
+    height:auto;
+    min-height:40px;
+    margin:10px 0px 5px 45px;/*was 100*/
+    /*display: flex;*/
+    z-index:0;
+    display:none;
+    float:left;
+}
+
+.WriteReplyDiv img {
+    float:left;
+    width:26px;
+    height:26px;
+    margin:4px 5px 4px 0px;
+    border-radius:50%;
+}
+
+.NewsfeedMakeReply {
+    float:left;
+    height:auto;
+    min-height:20px;
+    width:380px;
+    margin:auto;
+    background-color:#F0F2F5;
+    color:#60628F;
+    border-radius:20px;
+
+    font-size:16px;
+    padding-left:10px;
+    padding-top:10px;
+    padding-bottom:10px;
+    z-index:0;
+}
+
+.NameLink {
+    text-decoration: none;
+}
+
+.NameLink:hover {
+    text-decoration: underline;
+}
+
+a:visited {
+    color:black;
+}

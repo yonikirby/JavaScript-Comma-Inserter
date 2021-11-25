@@ -1,0 +1,13 @@
+* {
+	margin:auto;
+}
+
+body {
+	margin:auto;
+    background-color: #F0F2F5;
+}
+
+#myDiv {
+	margin:auto;
+	position:relative;
+}
