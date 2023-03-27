@@ -4,7 +4,7 @@ Hello.
 
 I have experience programming in Java in several classes, including Data Structures, Algorithms, Networking and Software Engineering.
 
-I also have experience in HTML/CSS, JavaScript, SQL, PHP and many other things. My personal website is http://yonatankirby.atwebpages.com/
+I also have experience in Node.JS, React, HTML/CSS, JavaScript, SQL, PHP and many other things. My personal website is http://yonatankirby.atwebpages.com/
 
 My Java Wikipedia Question-Asker is here on Github. Instructions for how to set up the program are in the readme file.
 
