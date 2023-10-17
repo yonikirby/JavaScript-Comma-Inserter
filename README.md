@@ -8,7 +8,7 @@ I also have experience in Node.JS, React, HTML/CSS, JavaScript, SQL, PHP and man
 
 My Java Wikipedia Question-Asker is here on Github. Instructions for how to set up the program are in the readme file.
 
-My social networking website is online at http://www.socialnetwork.a2hosted.com/ and you can test its features there. The files are also on Github here.
+My social networking website is online at http://www.socialnetwork.a2hosted.com/ and you can test its features there. The files are also on Github here. And photos are available as well on the root folder.
 
 My comma-inserter is also available online at http://www.socialnetwork.a2hosted.com/grammareditor and it is also stored here on Github.
 
